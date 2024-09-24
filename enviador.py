@@ -1,8 +1,10 @@
 import win32com.client as win32
 import pandas as pd
 
+caminho = input("Insira o caminho do arquivo: ")
+
 # Lendo o arquivo Excel (ajuste o caminho do arquivo se necessário)
-df = pd.read_excel('reclamantes.xlsx')
+df = pd.read_excel(caminho)
 
 # Inicializando o Outlook
 outlook = win32.Dispatch('outlook.application')
